@@ -191,6 +191,7 @@ class CameraAwesomeBuilder extends StatefulWidget {
     Widget Function(CameraState state)? middleContentBuilder,
     EdgeInsets previewPadding = EdgeInsets.zero,
     Alignment previewAlignment = Alignment.center,
+    bool showPreview = true,
   }) : this._(
           sensor: sensor,
           flashMode: flashMode,
@@ -222,6 +223,7 @@ class CameraAwesomeBuilder extends StatefulWidget {
           theme: theme ?? AwesomeTheme(),
           previewPadding: previewPadding,
           previewAlignment: previewAlignment,
+          showPreview: showPreview,
         );
 
   /// 🚧 Experimental
